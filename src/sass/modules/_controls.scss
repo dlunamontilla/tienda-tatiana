@@ -1,0 +1,63 @@
+::-moz-focus-inner {
+    border: 0;
+}
+
+.button {
+    --icon-size: 25px;
+    --color: inherit;
+    --fondo: transparent;
+
+    text-decoration: none;
+    outline: medium none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+
+    border-radius: 5px;
+    min-height: 40px;
+    color: var(--color);
+    padding: 5px 20px;
+    font: inherit;
+
+    background-image: none;
+    background-color: var(--fondo);
+
+    &,
+    path {
+        transition: 300ms ease;
+    }
+
+    &:hover {
+        --fondo: rgba(black, 0.3);
+        --color: #{$color-text};
+    }
+
+    svg {
+        width: var(--icon-size);
+        height: var(--icon-size);
+        margin-right: 5px;
+    }
+
+    path {
+        fill: var(--color);
+    }
+
+    &--success {
+        --fondo: #{$color-base};
+        --color: white;
+
+        &:hover {
+            --fondo: #{darken($button-success, 5)};
+            --color: white;
+        }
+
+        &:focus {
+            opacity: 0.8;
+        }
+
+        &:active {
+            --fondo: #{$button-success};
+        }
+    }
+}

@@ -1,0 +1,9 @@
+$color-base: #09c763;
+$color-secundario: #fc4427;
+$color-terciario: #d0a59f;
+
+$button-success: #09c763;
+$color-text: desaturate(darken($color-base, 20), 70);
+
+$width: calc(100% - 20px);
+$max-width: 1200px;

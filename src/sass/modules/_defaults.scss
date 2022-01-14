@@ -1,0 +1,27 @@
+:root {
+    color: $color-text;
+
+    font: {
+        family: "Open Sans", sans-serif, arial;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+
+    &::before,
+    &::after {
+        box-sizing: inherit;
+    }
+}
+
+hr {
+    border: 0;
+    margin: 40px auto;
+    border-bottom: 1px solid $color-base;
+}

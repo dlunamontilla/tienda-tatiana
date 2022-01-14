@@ -1,3 +1,4 @@
-main {
-	padding: 50px;
-}
+@import "modules/vars";
+@import "modules/controls";
+@import "modules/defaults";
+@import "modules/main";

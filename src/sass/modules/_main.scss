@@ -1,0 +1,144 @@
+.main {
+    margin: 0 auto;
+    max-width: $max-width;
+    width: $width;
+}
+
+.footer {
+    min-height: 30px;
+    background-color: $color-text;
+    color: white;
+}
+
+.navigation {
+    justify-content: space-between;
+    padding: 10px;
+
+    svg {
+        max-height: 30px;
+    }
+
+    &,
+    &__item {
+        display: flex;
+        align-items: center;
+
+        h3 svg {
+            margin-right: 10px;
+            fill: $color-secundario;
+        }
+    }
+}
+
+.logo {
+    color: $color-secundario;
+
+    font: {
+        weight: bold;
+        style: italic;
+        size: 1.4rem;
+    }
+}
+
+.banner {
+    position: relative;
+    padding-top: calc(100 / 510 * 100%);
+    background-color: $color-terciario;
+
+    width: $width;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 30px;
+    border-radius: 10px;
+
+    &__inner {
+        display: flex;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+}
+
+.cards {
+    display: grid;
+    margin: 0 auto;
+    gap: 20px;
+    width: $width;
+    max-width: $max-width;
+
+    --height-offers: 30px;
+
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+
+    &__item {
+        position: relative;
+
+        box-shadow: 4px 4px 0 0 darken(white, 5);
+        border: 1px solid darken(white, 15);
+
+        &__offers {
+            --gap: 10px;
+            
+            position: absolute;
+            margin: auto;
+            left: var(--gap);
+            right: auto;
+            top: var(--gap);
+            bottom: auto;
+
+            min-height: var(--height-offers);
+            padding: 0 10px;
+            border-radius: calc(var(--height-offers) / 2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+
+            font: {
+                weight: bold;
+                size: 0.8rem;
+            }
+            $color: #5a1ab4;
+            background-color: rgba($color, 0.2);
+            color: $color;
+            z-index: 1;
+        }
+
+        &__photo {
+            position: relative;
+            padding-top: 80%;
+            background-color: darken(white, 3);
+            z-index: 0;
+        }
+
+        &__container {
+            padding: 10px;
+
+            span {
+                --gap: 5px;
+
+                opacity: 0.3;
+                text-decoration: line-through;
+                margin-left: var(--gap);
+                padding-left: var(--gap);
+                border-left: 1px solid;
+            }
+        }
+
+        &__buttons {
+            display: flex;
+            padding: 10px;
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+}
