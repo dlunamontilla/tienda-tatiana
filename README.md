@@ -6,7 +6,7 @@ Primero debe descargar el proyecto, bien sea, por clonación o descarga normal. 
 cd tienda-tatiana
 ```
 
-Y luego de eso, escribir las siguientes líneas:
+Y luego de eso, escribir en la terminal:
 
 ```bash
 npm install
