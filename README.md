@@ -43,7 +43,7 @@ El proyecto fue construido en **Svelte**, pero utiliza una parte nativa de JavaS
 
 ---
 
-Acá se tiene la siguiente tabla de comandos que puede utilizar en función del contexto elegido:
+Acá se tiene la siguiente tabla con comandos que puede utilizar en función del contexto elegido:
 
 | **Comando**                                    | **¿Qué hace?**                                                                                        |
 | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
