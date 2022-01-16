@@ -1,6 +1,6 @@
 # Instrucciones de instalación
 
-Primero debe descargar el proyecto, bien sea, por clonación y descarga normal. Una vez hayas descargado el proyecto debe acceder a él mediante la siguiente línea:
+Primero debe descargar el proyecto, bien sea, por clonación o descarga normal. Una vez hayas descargado el proyecto debe acceder a él mediante la siguiente línea:
 
 ```bash
 cd tienda-tatiana
