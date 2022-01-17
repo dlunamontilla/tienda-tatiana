@@ -2,6 +2,7 @@
     margin: 0 auto;
     max-width: $max-width;
     width: $width;
+    padding: 20px;
 }
 
 .footer {
@@ -50,7 +51,6 @@
     margin-right: auto;
 
     margin-top: 30px;
-    border-radius: 10px;
 
     &__inner {
         display: flex;
@@ -80,8 +80,13 @@
     &__item {
         position: relative;
 
-        box-shadow: 4px 4px 0 0 darken(white, 5);
-        border: 1px solid darken(white, 15);
+        $color: lighten($color-terciario, 20);
+        $color: rgba($color, 0.14);
+
+        box-shadow: 4px 4px 0 0 $color;
+        border: 1px solid lighten($color-terciario, 60);
+        border-radius: 5px;
+        overflow: hidden;
 
         &__offers {
             --gap: 10px;
@@ -105,6 +110,7 @@
                 weight: bold;
                 size: 0.8rem;
             }
+
             $color: #5a1ab4;
             background-color: rgba($color, 0.2);
             color: $color;
@@ -114,13 +120,13 @@
         &__photo {
             position: relative;
             padding-top: 80%;
-            background-color: darken(white, 3);
+            background-color: rgba($color-terciario, 0.1);
+            border-bottom: 1px solid rgba($color-terciario, 0.3);
             z-index: 0;
         }
 
         &__container {
             padding: 10px;
-
             span {
                 --gap: 5px;
 

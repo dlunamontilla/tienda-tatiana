@@ -1,3 +1,9 @@
 {
-    "products": []
+    "products": [],
+
+    "locations": [
+        { "id": 1, "location": "Judibana, Venezuela" },
+        { "id": 2, "location": "Punto Fijo, Venezuela" },
+        { "id": 3, "location": "Caracas, Venezuela" }
+    ]
 }

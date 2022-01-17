@@ -5,3 +5,17 @@
         />
     </g>
 </svg>
+
+<style>
+    svg {
+        position: relative;
+        width: var(--icon-size);
+        height: var(--icon-size);
+
+        z-index: 2;
+    }
+
+    path {
+        fill: var(--icon-color);
+    }
+</style>

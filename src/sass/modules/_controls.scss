@@ -2,7 +2,10 @@
     border: 0;
 }
 
-.button {
+.button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
     --icon-size: 25px;
     --color: inherit;
     --fondo: transparent;
@@ -22,8 +25,10 @@
 
     background-image: none;
     background-color: var(--fondo);
+    transition: 300ms ease;
+}
 
-    &,
+.button {
     path {
         transition: 300ms ease;
     }
@@ -60,4 +65,52 @@
             --fondo: #{$button-success};
         }
     }
+
+    &--exit {
+        --size: 30px;
+
+        display: flex;
+        padding: 0;
+        background-color: rgba(black, 0.9);
+        border-radius: 50%;
+        min-height: auto;
+
+        margin-left: auto;
+        margin-right: 0;
+
+        width: var(--size);
+        height: var(--size);
+
+        cursor: pointer;
+
+        font: {
+            size: 1rem;
+        }
+
+        color: white;
+
+        &:hover {
+            $color: darken(red, 10);
+            background-color: rgba($color, 0.9);
+        }
+    }
+
+    &--block {
+        display: block;
+        width: 100%;
+    }
+}
+
+[type="text"],
+[type="email"],
+[type="number"],
+[type="search"] {
+    border: 1px solid;
+    min-height: 30px;
+    outline: medium none;
+    border-radius: 5px;
+    padding: 0 10px;
+    font: inherit;
+    caret-color: $color-base;
+    transition: 300ms ease;
 }
