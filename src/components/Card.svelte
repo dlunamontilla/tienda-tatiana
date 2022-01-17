@@ -23,7 +23,6 @@
 
         {#if product}
             <p>{product}</p>
-            <p>{name}</p>
         {/if}
     </div>
 
