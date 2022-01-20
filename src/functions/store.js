@@ -3,6 +3,9 @@ import { getRegister } from "./get-register";
 import { getLocation } from "./locations";
 
 const getTitle = writable(0);
+
+// Establece una ubicación geográficao de envío
+// si existe:
 getTitle.set(getLocation());
 
 const options = {
@@ -11,7 +14,4 @@ const options = {
 
 
 
-export {
-    options,
-    getTitle
-}
+export { options, getTitle }

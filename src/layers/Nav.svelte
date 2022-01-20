@@ -2,8 +2,10 @@
     import { getTitle } from "../functions/store";
     import Ubicacion from "../components/icons/Ubicacion.svelte";
     import CartButton from "../components/CartButton.svelte";
+    import { getLocation } from "../functions/locations";
 
-    console.log( $getTitle );
+    $: datos = $getTitle;
+    let datos = getLocation();
 </script>
 
 <nav class="navigation">
@@ -18,7 +20,7 @@
     <div class="navigation__item navigation__item--right">
         <h3>
             <Ubicacion />
-            {$getTitle}
+            {datos}
         </h3>
 
         <CartButton />

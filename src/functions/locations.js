@@ -7,10 +7,10 @@ import { getRegister } from "./get-register";
  */
 function getLocation() {
     const locations = getRegister("locations");
-    if (!locations) return "No se pudo obtener";
+    if (!locations) return "";
 
     const [ register ] = locations;
-    return register?.location || "No existe";
+    return register?.location || "";
 }
 
 /**

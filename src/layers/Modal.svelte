@@ -20,19 +20,21 @@
         savingButton = true;
 
         const response = saveFormDataToServer(this, "locations");
-        response.then(() => (savingButton = false));
+        
+        response.then(() => {
+            savingButton = false
+            getTitle.set(getLocation());
+        });
 
         disable = !disable;
-
-        getTitle.set(getLocation());
     };
 
     const closeWindow = () => {
         disable = !disable;
     };
 
-    let setTitle = "";
-    $: getTitle.set(setTitle);
+    // let setTitle = getLocation();
+    // $: getTitle.set(setTitle);
 </script>
 
 {#if !disable}
@@ -62,7 +64,6 @@
                             id="location"
                             placeholder="Introduzca una ubicación"
                             required="required"
-                            bind:value={setTitle}
                         />
                     </label>
 
