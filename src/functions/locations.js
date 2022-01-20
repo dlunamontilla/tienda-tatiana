@@ -1,25 +1,16 @@
+import { getRegister } from "./get-register";
 
 /**
- * Devuelve un array de ubicaciones disponibles. Si no
- * tiene ubicaciones devolverá null.
+ * Devuelve una dirección establecida previamente por el usuario.
  *
- * @returns { Array<string> }
+ * @returns { string }
  */
-async function getLocation() {
-    const location = localStorage.getItem("location");
-    const locations = [];
+function getLocation() {
+    const locations = getRegister("locations");
+    if (!locations) return "No se pudo obtener";
 
-    if (!location) {
-        const response = await fetch("./products");
-        const data = await response.json();
-        locations.push(...data);
-        localStorage.setItem("location", JSON.stringify(locations));
-    }
-
-    if (location)
-        locations.push(...JSON.parse(location));
-
-    return locations.length > 0 ? locations : null;
+    const [ register ] = locations;
+    return register?.location || "No existe";
 }
 
 /**

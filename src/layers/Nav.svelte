@@ -1,23 +1,28 @@
 <script>
-    import Ubicacion from "./icons/Ubicacion.svelte";
-    import CartButton from "./CartButton.svelte";
-    export let title = "México City Marriot Reforma Hotel...";
+    import { getTitle } from "../functions/store";
+    import Ubicacion from "../components/icons/Ubicacion.svelte";
+    import CartButton from "../components/CartButton.svelte";
+
+    console.log( $getTitle );
 </script>
 
 <nav class="navigation">
     <!-- Logotipo -->
     <div class="navigation__item">
         <div class="logo">
-            <img src="" alt="Tiendita">
+            <img src="" alt="Tiendita" />
         </div>
     </div>
 
     <!-- Información en la parte superior derecha -->
     <div class="navigation__item navigation__item--right">
-        <h3><Ubicacion /> {title}</h3>
+        <h3>
+            <Ubicacion />
+            {$getTitle}
+        </h3>
+
         <CartButton />
     </div>
-
 </nav>
 
 <style>

@@ -1,18 +1,16 @@
 <script>
-    import Header from "./components/Header.svelte";
-    import Footer from "./components/Footer.svelte";
+    import Header from "./layers/Header.svelte";
+    import Footer from "./layers/Footer.svelte";
     import Cards from "./components/Cards.svelte";
     import Modal from "./layers/Modal.svelte";
 
-    // import { get } from "svelte/store";
-
-    import { getLocation } from "./functions/locations";
+    import { options } from "./functions/store";
 </script>
 
 <Header />
 
 <main class="main">
-    <h2>Ofertas</h2>
+    <h2>Ofertas</h2>    
     <Cards popular={false} />
 
     <hr />
@@ -21,13 +19,6 @@
     <Cards popular={true} />
 </main>
 
-{#await getLocation()}
-    <!-- getLocation() is pending -->
-{:then value}
-    {#if !value}
-        <Modal classList={["modal", "modal--location"]} />
-        {document.body.setAttribute("style", "overflow: hidden")}
-    {/if}
-{/await}
-
 <Footer className="footer" />
+
+<Modal classList={["modal", "modal--location"]} disable={options.modalEnable} />
