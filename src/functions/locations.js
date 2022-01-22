@@ -7,9 +7,9 @@ import { getRegister } from "./get-register";
  */
 function getLocation() {
     const locations = getRegister("locations");
-    if (!locations) return "";
+    if (!Array.isArray(locations)) return "";
 
-    const [ register ] = locations;
+    const register = locations[locations.length - 1];
     return register?.location || "";
 }
 

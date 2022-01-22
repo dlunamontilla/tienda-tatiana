@@ -2,107 +2,107 @@
   "products": [],
   "locations": [
     {
-      "location": "Creolandia, Calle Santa Rosa, Venezuela",
+      "location": "Ciudad de México, México",
       "id": 1
     },
     {
-      "location": "Ciencia de datos",
+      "location": "Punto Fijo, Falcón, Venezuela",
       "id": 2
     },
     {
-      "location": "Creolandia, Calle Santa Rosa, Venezuela",
+      "location": "ciencia de",
       "id": 3
     },
     {
-      "location": "Creolandia, Calle Santa Rosa, Venezuela",
+      "location": "Creolandia, Venezuela",
       "id": 4
     },
     {
-      "location": "Ciencia de datos",
+      "location": "Juan Luna",
       "id": 5
     },
     {
-      "location": "Creolandia, Calle Santa Rosa, Venezuela",
+      "location": "David E Luna M",
       "id": 6
     },
     {
-      "location": "Ciencia de datos",
+      "location": "ciencia de datos",
       "id": 7
     },
     {
-      "location": "Creolandia, Calle Santa Rosa, Venezuela",
+      "location": "Contenido de prueba",
       "id": 8
     },
     {
-      "location": "Creolandia, Calle Santa Rosa, Venezuela",
+      "location": "Ciencia de datos",
       "id": 9
     },
     {
-      "location": "Creolandia, Calle Santa Rosa, Venezuela",
+      "location": "David Luna",
       "id": 10
     },
     {
-      "location": "Ciencia de datos",
+      "location": "Ciencia",
       "id": 11
     },
     {
-      "location": "Creolandia, Calle Santa Rosa, Venezuela",
+      "location": "",
       "id": 12
     },
     {
-      "location": "Creolandia, Calle Santa Rosa, Venezuela",
+      "location": "Venezuela",
       "id": 13
     },
     {
-      "location": "Creolandia, Calle Santa Rosa, Venezuela",
+      "location": "David",
       "id": 14
     },
     {
-      "location": "Ciencia de datos",
+      "location": "Venezuela",
       "id": 15
     },
     {
-      "location": "Ciencia de datos",
+      "location": "Buenos Aires, Argentina",
       "id": 16
     },
     {
-      "location": "Creolandia, Calle Santa Rosa, Venezuela",
+      "location": "Creolandia, Punto Fijo, Venezuela",
       "id": 17
     },
     {
-      "location": "Creolandia, Calle Santa Rosa, Venezuela",
+      "location": "Ciencia de datos",
       "id": 18
     },
     {
-      "location": "Creolandia, Calle Santa Rosa, Venezuela",
+      "location": "Ciencia de datos",
       "id": 19
     },
     {
-      "location": "asdfadsf",
+      "location": ".",
       "id": 20
     },
     {
-      "location": "Ciencia de datos",
+      "location": "Actualizando direcciones",
       "id": 21
     },
     {
-      "location": "Ciencia de datos",
+      "location": "Ciudad de México, México",
       "id": 22
     },
     {
-      "location": "Ciencia de datos",
+      "location": "Creolandia, Punto Fijo, Venezuela",
       "id": 23
     },
     {
-      "location": "Ciencia de datos",
+      "location": "ciencia de datos",
       "id": 24
     },
     {
-      "location": "Ciencia de datos",
+      "location": "Punto Fijo, Falcón, Venezuela",
       "id": 25
     },
     {
-      "location": "Ciencia de datos",
+      "location": "Punto Fijo, Falcón, Venezuela",
       "id": 26
     },
     {
@@ -114,19 +114,19 @@
       "id": 28
     },
     {
-      "location": "Ciencia",
+      "location": "David E Luna",
       "id": 29
     },
     {
-      "location": "Ciencia de datos",
+      "location": "David E Luna M",
       "id": 30
     },
     {
-      "location": "Ciencia de datos",
+      "location": "David",
       "id": 31
     },
     {
-      "location": "Ciencia de datos",
+      "location": "David E Luna",
       "id": 32
     },
     {
@@ -134,11 +134,11 @@
       "id": 33
     },
     {
-      "location": "Ciencia de datos",
+      "location": "dfasdf",
       "id": 34
     },
     {
-      "location": "Ciencia de datos",
+      "location": "ciencia de datos",
       "id": 35
     },
     {
@@ -146,19 +146,19 @@
       "id": 36
     },
     {
-      "location": "Ciencia de datos",
+      "location": "dsfadsfa",
       "id": 37
     },
     {
-      "location": "Creolandia, Calle Santa Rosa, Venezuela",
+      "location": "dfasdfadsf",
       "id": 38
     },
     {
-      "location": "Creolandia, Calle Santa Rosa, Venezuela",
+      "location": "Ciencia de datos",
       "id": 39
     },
     {
-      "location": "Creolandia, Calle Santa Rosa, Venezuela",
+      "location": "Contenido de prueba",
       "id": 40
     },
     {
@@ -178,15 +178,15 @@
       "id": 44
     },
     {
-      "location": "Ciencia de datos",
+      "location": "Contenido de prueba",
       "id": 45
     },
     {
-      "location": "Creolandia, Calle Santa Rosa, Venezuela",
+      "location": "Ciencia de datos",
       "id": 46
     },
     {
-      "location": "Ciencia de datos",
+      "location": "Barquisimeto, Lara, Venezuela",
       "id": 47
     },
     {
@@ -194,8 +194,89 @@
       "id": 48
     },
     {
-      "location": "Creolandia, Calle Santa Rosa, Venezuela",
+      "location": "Barquisimeto",
       "id": 49
+    },
+    {
+      "location": "David E Luna M",
+      "id": 50
+    },
+    {
+      "location": "David E Luna M",
+      "id": 51
+    },
+    {
+      "location": "Ciencia de datos",
+      "id": 52
+    },
+    {
+      "location": "Ciencia de datos",
+      "id": 53
+    },
+    {
+      "location": "ciencia",
+      "id": 54
+    },
+    {
+      "location": "Ciencia",
+      "id": 55
+    },
+    {
+      "location": "Barquisimeto",
+      "id": 56
+    },
+    {
+      "location": "Venezuela",
+      "id": 57
+    },
+    {
+      "location": "Barquisimeto, Lara, Venezuela",
+      "id": 58
+    },
+    {
+      "location": "Punto Fijo, Falcón, Venezuela",
+      "id": 59
+    },
+    {
+      "location": "Barquisimeto, Lara, Venezuela",
+      "id": 60
+    },
+    {
+      "location": "Venezuela",
+      "id": 61
+    },
+    {
+      "location": "Ciencia de datos",
+      "id": 62
+    },
+    {
+      "location": "Punto Fijo, Falcón, Venezuela",
+      "id": 63
+    },
+    {
+      "location": "Coro, Falcón, Venezuela",
+      "id": 64
+    },
+    {
+      "location": "Punto Fijo, Falcón, Venezuela",
+      "id": 65
+    },
+    {
+      "location": "ciencia de datos",
+      "id": 66
+    },
+    {
+      "location": "ciencia de datos",
+      "id": 67
+    },
+    {
+      "location": "ciencia de datos",
+      "id": 68
+    },
+    {
+      "location": "Ciencia de datos",
+      "id": 69
     }
-  ]
+  ],
+  "carts": []
 }

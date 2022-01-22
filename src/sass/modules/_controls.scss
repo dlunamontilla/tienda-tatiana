@@ -41,7 +41,6 @@
     svg {
         width: var(--icon-size);
         height: var(--icon-size);
-        margin-right: 5px;
     }
 
     path {
@@ -89,15 +88,57 @@
 
         color: white;
 
-        &:hover {
+        &:hover,
+        &:focus {
             $color: darken(red, 10);
             background-color: rgba($color, 0.9);
+        }
+
+        &:active {
+            opacity: 0.7;
+            transition: none;
         }
     }
 
     &--block {
         display: block;
         width: 100%;
+    }
+
+    &--location {
+        --size: 40px;
+
+        display: flex;
+        justify-content: center;
+
+        width: var(--size);
+        height: var(--size);
+
+        --icon-size: 100%;
+
+        min-width: auto;
+        padding: 0;
+        --icon-color: #{$color-base};
+
+        &:hover {
+            background-color: rgba($color-terciario, 0.2);
+            --icon-color: #{color-secundario};
+        }
+
+        &:active {
+            &,
+            path {
+                transition: none;
+            }
+
+            opacity: 0.7;
+        }
+    }
+
+    &[disabled] {
+        background-color: darken(white, 20);
+        color: darken(white, 80);
+        --icon-color: #{darken(white, 80)};
     }
 }
 
@@ -113,4 +154,54 @@
     font: inherit;
     caret-color: $color-base;
     transition: 300ms ease;
+}
+
+.locations {
+    background-color: darken(white, 3);
+    box-shadow: 4px 4px 0 0 rgba($color-terciario, 0.3);
+
+    --icon-color: #{$color-base};
+    --icon-size: 25px;
+
+    max-height: 30vh;
+    overflow: auto;
+
+    svg,
+    path {
+        transition: 300ms ease;
+
+        &:active {
+            transition: none;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+
+        transition: 300ms ease;
+
+        // En el caso de que se llegue a utilizar un enlace:
+        text-decoration: none;
+
+        $color: darken($color-base, 3);
+        $color: rgba($color, 0.3);
+
+        &:not(:first-of-type) {
+            border-top: 1px solid $color;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: rgba($color-terciario, 0.1);
+            --icon-color: #{color-terciario};
+            color: var(--icon-color);
+        }
+
+        &:active {
+            transition: none;
+            opacity: 0.7;
+        }
+    }
 }

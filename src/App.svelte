@@ -3,8 +3,6 @@
     import Footer from "./layers/Footer.svelte";
     import Cards from "./components/Cards.svelte";
     import Modal from "./layers/Modal.svelte";
-
-    import { options } from "./functions/store";
 </script>
 
 <Header />
@@ -21,4 +19,4 @@
 
 <Footer className="footer" />
 
-<Modal classList={["modal", "modal--location"]} disable={options.modalEnable} />
+<Modal classList={["modal", "modal--location"]} />

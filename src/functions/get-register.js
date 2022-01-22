@@ -1,5 +1,7 @@
 // @ts-check
 
+import { dataset_dev } from "svelte/internal";
+
 /**
  *
  * Ayuda a evaluar si el elemento pasado como parámetro es un campo
@@ -165,6 +167,16 @@ function getRegister(nameRegister) {
 }
 
 /**
+ * 
+ * @param { string } path Ruta de la api json a consumir.
+ */
+async function getRegisterFromServer(path) {
+    const response = await fetch(path);
+    const data = await response.json();
+    return data;
+}
+
+/**
  *
  * Permite buscar los datos dentro de un array de objetos.
  *
@@ -218,6 +230,7 @@ export {
     saveFormData,
     saveFormDataToServer,
     getRegister,
+    getRegisterFromServer,
     searchData,
     deleteRegister,
 };

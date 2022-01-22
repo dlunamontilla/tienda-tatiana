@@ -1,26 +1,29 @@
 <script>
-    import { getTitle } from "../functions/store";
+    import { getTitle, openWindow } from "../functions/store";
     import Ubicacion from "../components/icons/Ubicacion.svelte";
     import CartButton from "../components/CartButton.svelte";
     import { getLocation } from "../functions/locations";
 
-    $: datos = $getTitle;
-    let datos = getLocation();
+    $: title = $getTitle;
+    let title = getLocation();
 </script>
 
 <nav class="navigation">
     <!-- Logotipo -->
     <div class="navigation__item">
-        <div class="logo">
+        <a class="logo" href="./">
             <img src="" alt="Tiendita" />
-        </div>
+        </a>
     </div>
 
     <!-- Información en la parte superior derecha -->
     <div class="navigation__item navigation__item--right">
         <h3>
-            <Ubicacion />
-            {datos}
+            <button class="button button--location" on:click={openWindow.set(!$openWindow)}>
+                <Ubicacion />
+            </button>
+
+            {title}
         </h3>
 
         <CartButton />
@@ -37,5 +40,9 @@
         margin: 0;
         margin-right: var(--gap);
         padding-right: var(--gap);
+    }
+
+    button {
+        margin-right: 5px;
     }
 </style>

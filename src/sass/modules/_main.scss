@@ -23,17 +23,13 @@
     &__item {
         display: flex;
         align-items: center;
-
-        h3 svg {
-            margin-right: 10px;
-            fill: $color-secundario;
-        }
     }
 }
 
 .logo {
     color: $color-secundario;
-
+    text-decoration: none;
+    
     font: {
         weight: bold;
         style: italic;
@@ -45,12 +41,13 @@
     position: relative;
     padding-top: calc(100 / 510 * 100%);
     background-color: $color-terciario;
-
+    
     width: $width;
     margin-left: auto;
     margin-right: auto;
 
     margin-top: 30px;
+    border-radius: 10px;
 
     &__inner {
         display: flex;
@@ -63,6 +60,8 @@
         align-items: center;
         justify-content: center;
         color: white;
+
+        padding: 20px;
     }
 }
 

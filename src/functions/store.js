@@ -3,15 +3,11 @@ import { getRegister } from "./get-register";
 import { getLocation } from "./locations";
 
 const getTitle = writable(0);
+const openWindow = writable(0);
 
-// Establece una ubicación geográficao de envío
-// si existe:
+// Valores por defecto:
 getTitle.set(getLocation());
-
-const options = {
-    modalEnable: !!getRegister("locations")
-}
+openWindow.set(!!getRegister("locations"));
 
 
-
-export { options, getTitle }
+export { getTitle, openWindow };
